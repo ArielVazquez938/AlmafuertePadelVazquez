@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Almafuerte Padel</title>
 </head>
@@ -15,7 +17,7 @@
     <header>
         <div>
             <div class="contTitulo">
-                <h1 class="titulo">Nosotros</h1>
+                <h1 class="titulo animate__animated animate__backInLeft">Nosotros</h1>
             </div>
             <div>
                 <nav>
@@ -32,7 +34,7 @@
     </header>
     <main>
         <div id="historia">
-            <p id="pIntro">Su fundador, Ricardo Polizzotto, desempeñó por su pasión a este deporte, Almafuerte Padel, un
+            <p id="pIntro" class="animate__animated animate__zoomInUp">Su fundador, Ricardo Polizzotto, desempeñó por su pasión a este deporte, Almafuerte Padel, un
                 club con
                 más de 28 años de trayectoria, brindandole a la gente alegría y un ambiante amigable.</p>
         </div>
@@ -41,41 +43,44 @@
             <h3>¡Conocé nuestras instalaciones!</h3>
             <div>
                 <div>
-                    <img src="../assets/vestuario.jpg" alt="vestuario" class="foto">
-                    <img src="../assets/duchas.jpg" alt="duchas" class="foto">
-                    <img src="../assets/baño.jpg" alt="baño" class="foto">
+                    <img src="../assets/vestuario.jpg" alt="vestuario" class="foto animate__animated animate__flipInY">
+                    <img src="../assets/duchas.jpg" alt="duchas" class="foto animate__animated animate__flipInY">
+                    <img src="../assets/baño.jpg" alt="baño" class="foto animate__animated animate__flipInY">
                 </div>
                 <div class="pContainer">
                     <p>El club cuenta con vestuarios calefaccionados, duchas con agua caliente y baños con una limpieza
                         organizada. Baños de damas y caballeros divididos.</p>
                 </div>
 
-                <img src="../assets/cancha.jpg" alt="cancha" class="foto">
-                <img src="../assets/canchaUno.jpg" alt="canchaUno" class="foto">
-                <img src="../assets/canchaDos.jpg" alt="canchaDos" class="foto">
+                <img src="../assets/cancha.jpg" alt="cancha" class="foto animate__animated animate__flipInY">
+                <img src="../assets/canchaUno.jpg" alt="canchaUno" class="foto animate__animated animate__flipInY">
+                <img src="../assets/canchaDos.jpg" alt="canchaDos" class="foto animate__animated animate__flipInY">
                 <div class="pContainer">
-                <p>Las canchas son de cemento y recubiertas con una pintura elástica para cuidar principalmente de las
-                    rodillas y proveer un buen equilibrio entre agarre y desliz. Cabe destacar que son techadas y no
-                    tienen juego exterior ya que la reja llega a los cuatro metros de altura.</p>
+                    <p>Las canchas son de cemento y recubiertas con una pintura elástica para cuidar principalmente de
+                        las
+                        rodillas y proveer un buen equilibrio entre agarre y desliz. Cabe destacar que son techadas y no
+                        tienen juego exterior ya que la reja llega a los cuatro metros de altura.</p>
                 </div>
 
-                <img src="../assets/parrilla.jpg" alt="parrilla" class="foto">
-                <img src="../assets/parrillaUno.jpg" alt="parrillaUno" class="foto">
-                <img src="../assets/patio.jpg" alt="patio" class="foto">
+                <img src="../assets/parrilla.jpg" alt="parrilla" class="foto" data-aos="flip-right">
+                <img src="../assets/parrillaUno.jpg" alt="parrillaUno" class="foto" data-aos="flip-right">
+                <img src="../assets/patio.jpg" alt="patio" class="foto" data-aos="flip-right">
                 <div class="pContainer">
-                <p>Contamos con un área de descando y para compartir con amigos y familia, teniendo a su disposición una
-                    parrila amplia, mesas y bancos para disfrutar de una comida después de jugar!</p>
+                    <p>Contamos con un área de descando y para compartir con amigos y familia, teniendo a su disposición
+                        una
+                        parrila amplia, mesas y bancos para disfrutar de una comida después de jugar!</p>
                 </div>
 
-                <img src="../assets/buffet.jpg" alt="buffet" class="foto">
-                <img src="../assets/hogar.jpg" alt="hogar" class="foto">
-                <img src="../assets/heladera.jpg" alt="heladera" class="foto">
+                <img src="../assets/buffet.jpg" alt="buffet" class="foto" data-aos="flip-right">
+                <img src="../assets/hogar.jpg" alt="hogar" class="foto" data-aos="flip-right">
+                <img src="../assets/heladera.jpg" alt="heladera" class="foto" data-aos="flip-right">
                 <div class="pContainer">
-                <p>Nuestro buffet es atendido por el dueño o el encargado de turno. Contamos con varias bebidas sin
-                    alcohol, asi como también cervezas. En el mismo se ofrecen grips y pelotitas. <br>
-                    Tiene a su disposición paletas las cuales NO SE ALQUILAN.
-                    También puede disfrutar de comidas y juegos de cartas en el mismo justo al hogar a leña cuando las
-                    temperaturas son bajas.</p>
+                    <p>Nuestro buffet es atendido por el dueño o el encargado de turno. Contamos con varias bebidas sin
+                        alcohol, asi como también cervezas. En el mismo se ofrecen grips y pelotitas. <br>
+                        Tiene a su disposición paletas las cuales NO SE ALQUILAN.
+                        También puede disfrutar de comidas y juegos de cartas en el mismo justo al hogar a leña cuando
+                        las
+                        temperaturas son bajas.</p>
                 </div>
             </div>
         </section>
@@ -84,6 +89,11 @@
     <footer>
         <p>Todos los derechos reservados Almafuerte Padel</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
