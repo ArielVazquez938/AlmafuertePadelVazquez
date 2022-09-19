@@ -1,151 +1,110 @@
+/* GENERAL */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive !important;
 }
 
-#grillaNosotros,
-#grillaIndex,
-#grillaEscuela,
-#grillaContacto,
-#grillaTarifas {
-    width: 100vw;
+h1 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+body {
+    width: auto;
     height: auto;
-    background: linear-gradient(180deg, rgba(213,213,213,0.7146030287114846) 50%, rgba(52,253,45,0.2888327205882353) 100%);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: .5fr 2fr 2fr .3fr;
-    grid-template-areas: "header header header header"
-        "main main main main"
-        "main main main main"
-        "footer footer footer footer";
 }
 
-header {
-    grid-area: header;
+
+#header {
+    height: auto;
 }
 
-main {
-    grid-area: main;
+#main {
+    height: auto;
 }
 
-footer {
-    grid-area: footer;
+#footer {
+    height: auto;
+    color: #b9b9b9;
 }
 
-/* header mod */
-
-header {
-    display: flex;
-    justify-content: center;
+#imagen1 {
+    height: 400px;
 }
 
-/* header mod titulo */
-
-.contTitulo {
-    text-align: center;
-}
-
-.subtitulo {
-    color: rgba(139, 10, 10, 0.753);
-    ;
-}
-
-/* header mod nav */
-
-nav ul li {
-    display: inline-block;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+/* nav */
 
 a {
-    color: rgba(122, 122, 122, 0.753);
+    color: rgba(109, 109, 109, 0.781) !important;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 a:hover {
-    color: #369681;
+    color: #369681 !important;
+    transition: .3s;
+    font-style: italic;
 }
 
-/* main mod */
-
-main {
-    width: 100vw;
-    height: auto;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+a.active {
+    border: 1px dashed rgba(109, 109, 109, 0.781);
+    border-radius: 7px;
 }
 
-#salon {
-    width: 700px;
-    height: 380px;
-    margin-top: 15px;
+
+/* buttons */
+
+.btn {
+    color: #fff;
+    background-color: #18e50d;
+    border: 2px solid black;
 }
 
-.parrafosDistintivos {
-    text-transform: uppercase;
-    margin: 15px;
-    font-size: 30px;
+.btn:hover {
+    color: #fff;
+    background-color: #18e50d;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+/* paragraphs */
+
+.paragraphs {
+    color: rgb(78, 10, 10);
+    font-style: italic;
     font-weight: 700;
 }
 
-.btnEnlace {
-    background-color: #30e702;
-    color: white;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 8px;
-    font-size: 20px;
-    border: 1px solid black;
-}
-
-.btnEnlace:hover {
-    background-color: #29a906;
-    color: white;
-}
-
-.contenedor {
-    display: flex;
-    align-items: center;
-}
-
-.contenedor section {
-    margin-left: 30px;
-}
-
-/* footer mod */
-
-footer {
-    text-align: center;
-    margin-top: 30px;
-    font-weight: 300;
-}
-
-/* tablas mod */
+/* TABLES */
 
 .tablaContenedor {
     margin: 15px auto;
-    width: 600px;
 }
 
 table {
     text-align: left;
     background-color: rgba(39, 61, 54, 0.158);
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     border-radius: 15px;
 }
 
 th,
 td {
-    padding: 20px;
+    padding: 10px;
 }
 
 tr:hover td {
@@ -163,30 +122,17 @@ thead {
     font-weight: 700;
 }
 
-/* nosotros mod */
+/* School */
 
-#historia {
-    width: 300px;
-    margin-top: -50px;
+.imgEscuela {
+    margin: 50px 25px;
+    width: 50px;
+    height: 50px;
 }
 
-#pIntro {
-    font-weight: 700;
-    color: #7a7a7a;
-}
+/* Contact */
 
-#seccionNosotros {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.foto {
-    width: 300px;
-    height: 150px;
-    margin: 25px 10px;
-}
-
-/* formulario mod */
+/* forms */
 
 .formContenedor {
     margin: 15px auto;
@@ -199,7 +145,7 @@ fieldset {
 }
 
 .pForm {
-    margin-top: 25px;
+    margin-top: 18px;
     margin-bottom: 10px;
 }
 
@@ -223,248 +169,77 @@ input {
     border: solid 2px #369681;
 }
 
-/* botones mod */
 
-.btn {
-    width: 150px;
-    height: 35px;
-    background-color: #369681;
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 8px;
-    margin-top: 30px;
-}
-
-.btn:hover {
-    background-color: #2ef448;
-    text-transform: uppercase;
-}
-
-/* redes mod */
+/* social networks */
 
 .redesLogo {
     width: 50px;
     height: 50px;
+    margin: 0 20px;
 }
 
-.logoMod {
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#seccionRedes {
-    display: flex;
-    flex-direction: column;
-}
-
-#seccionRedes p {
-    margin-bottom: 30px;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-/* escuela mod */
-
-.orgSeccion {
-    margin: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.orgSeccion section {
+#redes {
     margin: 50px;
-    text-align: center;
 }
 
-.imgEscuela {
-    width: 75px;
-    height: 75px;
-    border: 2px solid black;
-    border-radius: 5px;
+/* US */
+
+/* photos */
+
+.photo {
+    width: 300px;
+    height: 150px;
+    margin: 20px 10px;
 }
 
-.pEscuela {
-    color: rgba(139, 10, 10, 0.753);
+img {
+    border-radius: 8px;
 }
 
-/* laptop media */
-@media only screen and (max-width: 1200px) {}
+.historia {
+    color: #717171;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    width: 500px;
+}
 
-/* tablet media */
-@media only screen and (max-width: 768px) {
-    .foto {
-        width: 150px;
-        height: 70px;
-        margin: 15px 5px;
+/* media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .photo {
+        width: 100%;
+        height: 200px;
     }
 
-    #historia {
-        width: 450px;
-        margin-top: -50px;
+    p {
+        font-size: 20px;
+    }
+
+    .historia {
         font-size: 25px;
     }
+}
 
-    #seccionNosotros div p {
-        width: 450px;
-        font-weight: 700;
-        font-size: 18px;
-        margin-left: 100px;
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .photo {
+        width: 100%;
+        height: 200px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .historia {
+        font-size: 25px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 965px) {
-    .foto {
-        width: 200px;
-        height: 100px;
-        margin: 15px 5px;
-    }
-}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { }
 
-/* mobile media */
-
-@media only screen and (max-width: 480px) {
-    #grillaIndex {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: .5fr .3fr;
-        grid-template-areas: "header header"
-            "footer footer";
-    }
-
-    nav ul {
-        text-align: center;
-    }
-
-    /* index 480px */
-
-    nav ul li {
-        display: block;
-    }
-
-    .separacion {
-        padding: 50px;
-        margin: 30px;
-    }
-
-    .navIndex {
-        background-color: #2ef448;
-        color: #fff;
-        padding: 20px;
-        border-radius: 7%;
-        -webkit-box-shadow: 21px 15px 6px 7px rgba(122, 122, 122, 0.95);
-        -moz-box-shadow: 21px 15px 6px 7px rgba(122, 122, 122, 0.95);
-        box-shadow: 21px 15px 6px 7px rgba(122, 122, 122, 0.95);
-    }
-
-    .menuIndex {
-        display: none;
-    }
-
-    /* contacto 480px */
-
-    #grillaContacto {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: .5fr 1fr .3fr;
-        grid-template-areas: "header header"
-            "main main"
-            "footer footer";
-    }
-
-    .formContenedor {
-        margin: 0 auto;
-        width: 300px;
-    }
-
-    /* nosotros 480px */
-    
-    #seccionNosotros div p {
-        width: 300px;
-        font-size: 16px;
-        font-weight: 300;
-    }
-
-    /* tarifas 480px */
-
-    .tablaContenedor {
-        margin: 15px auto;
-        width: 400px;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 900px) {
-    #grillaIndex {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: .5fr .3fr;
-        grid-template-areas: "header header"
-            "footer footer";
-    }
-
-    nav ul {
-        text-align: center;
-    }
-
-    /* index 480px */
-
-    nav ul li {
-        display: block;
-    }
-
-    .separacion {
-        padding: 50px;
-        margin: 30px;
-    }
-
-    .navIndex {
-        background-color: #2ef448;
-        color: #fff;
-        padding: 20px;
-        border-radius: 7%;
-        -webkit-box-shadow: 21px 15px 6px 7px rgba(122, 122, 122, 0.95);
-        -moz-box-shadow: 21px 15px 6px 7px rgba(122, 122, 122, 0.95);
-        box-shadow: 21px 15px 6px 7px rgba(122, 122, 122, 0.95);
-    }
-
-    .menuIndex {
-        display: none;
-    }
-
-    /* contacto 480px */
-
-    #grillaContacto {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: .5fr 1fr .3fr;
-        grid-template-areas: "header header"
-            "main main"
-            "footer footer";
-    }
-
-    .formContenedor {
-        margin: 0 auto;
-        width: 300px;
-    }
-
-    /* nosotros 480px */
-    
-    #seccionNosotros div p {
-        width: 300px;
-        font-size: 16px;
-        font-weight: 300;
-    }
-
-    /* tarifas 480px */
-
-    .tablaContenedor {
-        margin: 15px auto;
-        width: 400px;
-    }
-}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { }
