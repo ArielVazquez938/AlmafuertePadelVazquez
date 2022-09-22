@@ -41,6 +41,7 @@ body {
 
 #imagen1 {
     height: 400px;
+    object-fit: cover;
 }
 
 /* nav */
@@ -190,6 +191,7 @@ input {
     width: 300px;
     height: 150px;
     margin: 20px 10px;
+    object-fit: cover;
 }
 
 img {
