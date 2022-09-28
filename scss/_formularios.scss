@@ -1,0 +1,35 @@
+/* forms */
+
+.formContenedor {
+    margin: 15px auto;
+    width: 600px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 30px;
+}
+
+.pForm {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+form {
+    padding: 20px;
+    color: rgb(121, 119, 119);
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+.inputStyle {
+    border: solid 1px #b9b9b9;
+    padding: 5px;
+    width: 280px;
+        &:focus {
+            border: solid 2px $verde-claro;
+        }
+}

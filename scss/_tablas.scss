@@ -1,0 +1,33 @@
+/* TABLES */
+
+.tablaContenedor {
+    margin: 15px auto;
+}
+
+table {
+    text-align: left;
+    background-color: rgba(39, 61, 54, 0.158);
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+tr:hover td {
+    background-color: $verde-claro;
+    color: white;
+}
+
+thead {
+    background-color: #246355;
+    border-bottom: solid 3px #0f362d;
+    color: white;
+}
+
+.pStyle {
+    font-weight: 700;
+}
