@@ -18,7 +18,7 @@ td {
 }
 
 tr:hover td {
-    background-color: $verde-claro;
+    background-color: map-get($colores-principales, "verde-claro");
     color: white;
 }
 

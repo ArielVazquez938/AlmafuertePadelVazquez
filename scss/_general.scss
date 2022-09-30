@@ -38,7 +38,7 @@ a {
     font-weight: bold;
     font-size: $size-fuente*2;
         &:hover {
-            color: $verde-claro !important;
+            color: map-get($colores-principales, "verde-claro") !important;
             transition: .3s;
             font-style: italic;
         }
@@ -52,11 +52,11 @@ a {
 
 .btn {
     color: #fff;
-    background-color: $verde-luminoso;
+    background-color: map-get($colores-principales, "verde-luminoso");
     border: 2px solid black;
         &:hover {
             color: #fff;
-            background-color: $verde-luminoso;
+            background-color: map-get($colores-principales, "verde-luminoso");
             border: 2px solid black;
             font-weight: bold;
         }
@@ -65,7 +65,7 @@ a {
 // paragraphs
 
 .paragraphs {
-    color: $bordo;
+    color: map-get($colores-principales, "bordo");
     font-style: italic;
     font-weight: 700;
 }

@@ -27,9 +27,7 @@ img {
 // social networks
 
 .redesLogo {
-    width: 50px;
-    height: 50px;
-    margin: 0 20px;
+    @include logo;
 }
 
 #redes {

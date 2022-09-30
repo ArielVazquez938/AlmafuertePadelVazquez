@@ -30,6 +30,6 @@ input {
     padding: 5px;
     width: 280px;
         &:focus {
-            border: solid 2px $verde-claro;
+            border: solid 2px map-get($colores-principales, "verde-claro");
         }
 }
