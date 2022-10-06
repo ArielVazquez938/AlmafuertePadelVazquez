@@ -1,13 +1,14 @@
 * {
-    font-family: $normal;
+    font-family: $principal;
 }
 
 p {
     font-size: $size-fuente +4;
+    font-size: $parrafos;
 }
 
 footer p {
-    font-size: $size-fuente;
+    font-size: $size-fuente+2;
 }
 
 body {
@@ -32,32 +33,28 @@ body {
 // nav
 
 a {
-    color: rgba(109, 109, 109, 0.781) !important;
+    color: map-get($colores-principales, "negro") !important;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: $size-fuente*2;
+    font-family: $enlaces;
         &:hover {
-            color: map-get($colores-principales, "verde-claro") !important;
-            transition: .3s;
+            color: map-get($colores-principales, "verde-luminoso") !important;
+            transition: .4s;
             font-style: italic;
-        }
-        &.active {
-            border: 1px dashed rgba(109, 109, 109, 0.781);
-            border-radius: 7px;
         }
 }
 
 // buttons
 
 .btn {
-    color: #fff;
+    color: map-get($colores-principales, "blanco");
     background-color: map-get($colores-principales, "verde-luminoso");
     border: 2px solid black;
         &:hover {
-            color: #fff;
+            color: map-get($colores-principales, "negro");
             background-color: map-get($colores-principales, "verde-luminoso");
-            border: 2px solid black;
             font-weight: bold;
         }
 }
@@ -68,4 +65,12 @@ a {
     color: map-get($colores-principales, "bordo");
     font-style: italic;
     font-weight: 700;
+}
+
+.historia {
+    color: map-get($colores-principales, "negro");
+    font-style: italic;
+    font-size: $size-fuente+6;
+    font-weight: bold;
+    width: 500px;
 }

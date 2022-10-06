@@ -10,18 +10,11 @@
     height: 150px;
     margin: 20px 10px;
     object-fit: cover;
+    border: $bordeUno;
 }
 
 img {
     border-radius: 8px;
-}
-
-.historia {
-    color: #717171;
-    font-style: italic;
-    font-size: $size-fuente+6;
-    font-weight: bold;
-    width: 500px;
 }
 
 // social networks
@@ -38,6 +31,7 @@ img {
 
 .imgEscuela {
     margin: 50px 25px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    border: $bordeUno;
 }

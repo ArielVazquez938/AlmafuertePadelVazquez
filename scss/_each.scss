@@ -2,10 +2,7 @@ $colores-principales:(
     "verde-claro": #369681,
     "verde-luminoso": #18e50d,
     "bordo": #4e0a0a,
+    "gris": #c4c4c4a5,
+    "blanco": #fff,
+    "negro": #000,
 );
-
-@each $nombre,$color in $colores-principales {
-    .#{$nombre}{
-        color:$color;
-    }    
-}

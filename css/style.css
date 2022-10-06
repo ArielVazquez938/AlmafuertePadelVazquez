@@ -1,20 +1,12 @@
-.verde-claro {
-  color: #369681; }
-
-.verde-luminoso {
-  color: #18e50d; }
-
-.bordo {
-  color: #4e0a0a; }
-
 * {
-  font-family: "DynaPuff", cursive !important; }
+  font-family: "Gemunu Libre", sans-serif; }
 
 p {
-  font-size: 14px; }
+  font-size: 14px;
+  font-size: "Yanone Kaffeesatz", sans-serif; }
 
 footer p {
-  font-size: 10px; }
+  font-size: 12px; }
 
 body {
   width: auto;
@@ -31,33 +23,37 @@ body {
   color: #b9b9b9; }
 
 a {
-  color: rgba(109, 109, 109, 0.781) !important;
+  color: #000 !important;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: "DynaPuff", cursive; }
   a:hover {
-    color: #369681 !important;
-    transition: .3s;
+    color: #18e50d !important;
+    transition: .4s;
     font-style: italic; }
-  a.active {
-    border: 1px dashed rgba(109, 109, 109, 0.781);
-    border-radius: 7px; }
 
 .btn {
   color: #fff;
   background-color: #18e50d;
   border: 2px solid black; }
   .btn:hover {
-    color: #fff;
+    color: #000;
     background-color: #18e50d;
-    border: 2px solid black;
     font-weight: bold; }
 
 .paragraphs {
   color: #4e0a0a;
   font-style: italic;
   font-weight: 700; }
+
+.historia {
+  color: #000;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  width: 500px; }
 
 #imagen1 {
   height: 400px;
@@ -67,17 +63,11 @@ a {
   width: 300px;
   height: 150px;
   margin: 20px 10px;
-  object-fit: cover; }
+  object-fit: cover;
+  border: 2px solid black; }
 
 img {
   border-radius: 8px; }
-
-.historia {
-  color: #717171;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: bold;
-  width: 500px; }
 
 .redesLogo {
   width: 50px;
@@ -89,8 +79,9 @@ img {
 
 .imgEscuela {
   margin: 50px 25px;
-  width: 50px;
-  height: 50px; }
+  width: 70px;
+  height: 70px;
+  border: 2px solid black; }
 
 /* TABLES */
 .tablaContenedor {
